@@ -32,44 +32,44 @@ TEST(PracticeTest, smoke_test)
 TEST(PracticeTest, zzz_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats("zzz"), 3);
+	ASSERT_EQ(obj.count_starting_repeats("zzz"), 2);
 	//ASSERT_EQ(obj.count_starting_repeats("zzazzz"), 2);
 }
 
 TEST(PracticeTest, zzazzz_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats("zzazzz"), 2);
+	ASSERT_EQ(obj.count_starting_repeats("zzazzz"), 1);
 }
 
 TEST(PracticeTest, ZZzzazzz_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats("ZZzzazzz"), 2);
+	ASSERT_EQ(obj.count_starting_repeats("ZZzzazzz"), 1);
 }
 
 TEST(PracticeTest, Zz_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats("Zz"), 1);
+	ASSERT_EQ(obj.count_starting_repeats("Zz"), 0);
 }
 
 TEST(PracticeTest, blank_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats(""), 1);
+	ASSERT_EQ(obj.count_starting_repeats(""), 0);
 }
 
 TEST(PracticeTest, zzzzzzAzzzz_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats("AzzzzzzAzzzz"), 1);
+	ASSERT_EQ(obj.count_starting_repeats("AzzzzzzAzzzz"), 0);
 }
 
 TEST(PracticeTest, azzz_repetition)
 {
     Practice obj;
-	ASSERT_EQ(obj.count_starting_repeats("azzz"), 1);
+	ASSERT_EQ(obj.count_starting_repeats("azzz"), 0);
 }
 
 TEST(PracticeTest, hannah_palindrome)
@@ -142,3 +142,15 @@ TEST(PracticeTest, 213_sort)
 	ASSERT_EQ(c,1);
 
 }
+
+/*
+TEST(PracticeTest, 0_nighter)
+{
+	
+	Practice obj;
+	int nights [7] = {0,0,0,0,0,0,0}
+	ASSERT_EQ(obj.allnighter(nights), )
+	
+
+}
+*/

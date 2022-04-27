@@ -41,6 +41,9 @@ void Practice::sortDescending(int & first, int & second, int & third)
   else{
     middle = third;
   }
+  first = biggest;
+  second = middle;
+  third = smallest;
 }
 
 // Receive a string and return whether or not it is strictly a palindrome,
@@ -84,6 +87,8 @@ int Practice::count_starting_repeats(string word)
     for(unsigned int i=1; i < word.length(); i++){
       if( word[i] == letter ){
         repetition++;
+      } else {
+        break;
       }
     }    
 
@@ -96,6 +101,14 @@ int Practice::count_starting_repeats(string word)
 // However, if there are no such days found, the function should return nullptr.
 int* Practice::allnighter(int sleep[7])
 {
-
-
+  /*
+    int *p;
+    for(int i=0; i < 7; i++) {
+      if(sleep[i] == 0) {
+        *p = &i;
+        return *p;
+      }
+    }
+    return nullptr;
+  */
 }
